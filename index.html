@@ -61,10 +61,10 @@
 					<h2>Introduction</h2>
 					<br>
 					<div>
-						<p>What's a web service?</p>
+						<p>What's web service?</p>
 						<br>
 						<p>
-							A method of communication between two electronic devices over the World Wide Web. A web service is a software function provided at a network address over the web or the cloud (from <a href="http://en.wikipedia.org/wiki/Web_service">wiki</a>)
+							A web service is a software function provided at a network address over the web or the cloud (from <a href="http://en.wikipedia.org/wiki/Web_service">wiki</a>)
 						</p>
 					</div>
 					
@@ -78,14 +78,9 @@
 							<li class="fragment"><a href="http://www.flickr.com/">Flickr</a></li>
 							<li class="fragment"><a href="aws.amazon.com/s3/ ">Amazon S3</a></li>
 							<li class="fragment"><a href="www.dropbox.com">Dropbox</a></li>
+							<li class="fragment">etc...</li>	
 						</ul>
-						<br><br>
-						<p class="fragment">Any Other?</p>
 					</div>
-				</section>
-
-				<section>
-					<h1>How to do?</h1>
 				</section>
 
 				<section>
@@ -104,7 +99,8 @@
 					<h2>HTTP</h2>
 					<br>
 					<div>
-						<p>No HTTP, No web. All are based on HTTP!</p><br>
+						<p>No HTTP, No web. <br>
+							All are based on HTTP!</p><br>
 						<ul>
 							<li class="fragment">HTTP Request</li>
 							<li class="fragment">HTTP Response</li>	
@@ -118,8 +114,7 @@
 					<div>
 						<ul>
 							<li class="fragment">URL<br>www.google.com</li>
-							<li class="fragment">Header<br>User-Agent: curl/7.23.1,...</li>
-							<li class="fragment">Method<br>GET, POST, PUT, HEAD, DELETE</li>
+							<li class="fragment">Header<br>Method: GET, POST, PUT, HEAD, DELETE</li>
 							<li class="fragment">Body<br>Request Data, like hello world</li>
 						</ul>
 					</div>
@@ -132,30 +127,24 @@
 						<ul>
 							<li class="fragment">Code<br>200,301,404, ...</li>
 							<li class="fragment">Header<br>Content-Type: text/html,...</li>
-							<li class="fragment">Body<br>Response Data, like 404 error</li>
+							<li class="fragment">Body<br>Response Data, like Hello World</li>
 						</ul>
 					</div>
 				</section>
 
 				<section>
 					<h2>API</h2>
-					<br>
-					<div>
-						<p class="fragment">Local Program: Posix API, WIN32 API, etc...</p>
-						<br>
-						<p class="fragment">Web Program: Web API</p><br>
-						<p class="fragment">API Pattern:</p>
-						<ul class="fragment">
-							<li>RPC<br>
-								http://host/bucket/addFile?name=abc<br>
-								http://host/bucket/getFile?name=abc
-							</li>
-							<li>Restful<br>
-								post http://host/bucket/abc<br>
-								get  http://host/bucket/abc
-							</li>							
-						</ul>
-					</div>
+					<br><br>
+					<ul>
+						<li class="fragment">RPC<br>
+							http://host/bucket/addFile?name=abc<br>
+							http://host/bucket/getFile?name=abc
+						</li>
+						<li class="fragment">Restful<br>
+							post http://host/bucket/abc<br>
+							get  http://host/bucket/abc
+						</li>							
+					</ul>
 				</section>
 
 				<section>
@@ -165,7 +154,6 @@
 						<ul>
 							<li>XML</li>
 							<li>JSON</li>
-							<li>SOAP</li>
 							<li>etc......</li>
 						</ul>
 					</div>
@@ -194,10 +182,6 @@
 							<li>Availability</li>
 							<li>Partition Tolerance</li>
 						</ol>
-						<br><br>
-						<p class="fragment">Simple Prove?</p>
-						<br>
-						<p class="fragment">Meaning?</p>
 					</div>
 				</section>			
 
@@ -251,7 +235,12 @@
 
 				<section>
 					<h2>Consistent Hash</h2>
-					<img src="./image/3.png">
+					<img src="./image/hash1.jpg" width="480" height = "320">
+				</section>
+
+				<section>
+					<h2>Consistent Hash</h2>
+					<img src="./image/hash2.jpg" width="480" height = "320">
 				</section>
 
 				<section>
@@ -303,14 +292,18 @@
 				</section>
 
 				<section>
-					<h1>Some HA Solution</h1>
+					<h2>GFS</h2>
+					<br>
+					<img src="./image/gfs.png">
+				</section>
+
+				<section>
+					<h1>Some Solution</h1>
 				</section>
 
 				<section>
 					<h2>Service HA</h2>
-					<br>
-					<p>Using <a href="http://www.linux-ha.org/wiki/Main_Page">Linux-HA</a></p>
-					<br>
+					<br><br>
 					<p>Heartbeat</p>
 					<p>Keepalived</p>
 				</section>
@@ -322,7 +315,7 @@
 						<li class="fragment">Master/Slave</li>
 						<li class="fragment">Master/Master</li>
 						<li class="fragment">Semi-Sync Replication</li>
-						<li class="fragment">MYSQL Cluster, etc...</li>
+						<li class="fragment">etc...</li>
 					</ul>
 				</section>
 
@@ -332,11 +325,6 @@
 					<img src="./image/oceanbase.jpg">
 				</section>
 
-				<section>
-					<h2>GFS</h2>
-					<br>
-					<img src="./image/gfs.png">
-				</section>
 
 				<section>
 					<h1>Any Question?</h1>
